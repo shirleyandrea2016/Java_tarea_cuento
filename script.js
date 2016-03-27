@@ -11,17 +11,24 @@ document.write ("El valor original de la clave es:" +clave);
 alert ("gracias por visitar")
 console.log ("fin de programa");*/
 
-/*CUENTO EN JAVA*/
-/*alert("Sigue las instrucciones.");
-var sustantivo1 = prompt("Ingrese un Sustantivo: ");
-var adjectivo1 = prompt("Ingrese un Adjectivo: ");
-var verbo1 = prompt("Ingrese un verbo: ");
+/*CUENTA CUENTOS EN JAVA CON CUENTA REGRESIVA DE PREGUNTAS*/
+var preguntas = 3;
+var preguntasFaltantes = "Quedan " + preguntas + " preguntas.";
+alert("Sigue las instrucciones.");
+var sustantivo1 = prompt("Ingrese un Sustantivo: " + preguntasFaltantes);
+preguntas = preguntas -1;
+var preguntasFaltantes = "Quedan " + preguntas + " preguntas.";
+var adjectivo1 = prompt("Ingrese un Adjectivo: " + preguntasFaltantes);
+preguntas = preguntas -1;
+var preguntasFaltantes = "Quedan " + preguntas + " preguntas.";
+var verbo1 = prompt("Ingrese un verbo: " + preguntasFaltantes);
 var cuento = "El " + adjectivo1 + " " + sustantivo1 + " queria " + verbo1 + " en el frondoso bosque tenebroso!";
 document.write("<h1></h1><p>" + cuento + "</p>");
 var cuento = "El " + adjectivo1 + " " + sustantivo1 + " queria " + verbo1 + " en la noche oscura y fría";
 document.write("<h1></h1><p>" + cuento + "</p>");
 var cuento = "El " + adjectivo1 + " " + sustantivo1 + " queria " + verbo1 + " junto a la familia huesitos!";
-document.write("<h1></h1><p>" + cuento + "</p>");*/
+document.write("<h1></h1><p>" + cuento + "</p>");
+console.log("Fin del programa");
 
 /*CALCULADORA DEL TIEMPO*/
 /*var segundosPorMinuto = 60;
@@ -39,8 +46,9 @@ document.write ("<h1>Calculadora del Tiempo</h1><p>Has vivido " + anVividos + " 
 */
 
 /*CASTING parseInt()*/
-var peliculasVistas = prompt("Cuantas peliculas has visto este mes?");
+/*var peliculasVistas = prompt("Cuantas peliculas has visto este mes?");
 var seriesVistas = prompt("Cuantas series has visto este mes?");
 var tiempoPantalla = parseInt(peliculasVistas) + parseInt(seriesVistas);
 document.write ('Wow! Has visto ' + tiempoPantalla + " veces minimo la pantalla.");
- console.log ("Programa completado" )
+console.log ("Programa completado" )
+*/
