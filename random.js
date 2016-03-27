@@ -56,13 +56,6 @@ if (isNaN(num));
 else {num=num*0.5;}
 
 
-/*DESAFÍO
--que retorne un número al azar entre 2 limites, uno superior y uno inferior 
-(el número en este rango inclusivo)
--pedir los limetes al usuario
--constar de funcion para generar el num al azar
--mostrar el numero al azar al usuario
--manejar errores con trow y verificando (validando) si los datos ingresados son numeros*/
 
 
 
