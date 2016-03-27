@@ -1,6 +1,5 @@
 console.log ("Inicio de programa");
 
-alert ("Hola Javascript");
 /*document.write ("<h1>saludo inicial</h1>");
 var nombre = prompt ("Cual es tu equipo de futbol favorito");
 document.write ("El equipo es:" +nombre);
@@ -12,7 +11,7 @@ alert ("gracias por visitar")
 console.log ("fin de programa");*/
 
 /*CUENTA CUENTOS EN JAVA CON CUENTA REGRESIVA DE PREGUNTAS*/
-var preguntas = 3;
+/*var preguntas = 3;
 var preguntasFaltantes = "Quedan " + preguntas + " preguntas.";
 alert("Sigue las instrucciones.");
 var sustantivo1 = prompt("Ingrese un Sustantivo: " + preguntasFaltantes);
@@ -29,6 +28,7 @@ document.write("<h1></h1><p>" + cuento + "</p>");
 var cuento = "El " + adjectivo1 + " " + sustantivo1 + " queria " + verbo1 + " junto a la familia huesitos!";
 document.write("<h1></h1><p>" + cuento + "</p>");
 console.log("Fin del programa");
+*/
 
 /*CALCULADORA DEL TIEMPO*/
 /*var segundosPorMinuto = 60;
@@ -52,3 +52,16 @@ var tiempoPantalla = parseInt(peliculasVistas) + parseInt(seriesVistas);
 document.write ('Wow! Has visto ' + tiempoPantalla + " veces minimo la pantalla.");
 console.log ("Programa completado" )
 */
+
+/*OBJETO MATH*/
+var dado = Math.floor(Math.random()*6)+1;
+alert("Dado dice:  " +dado);
+console.log ("Programa completado");
+
+
+
+/*OBJETO MATH ejercicio*/
+var numero = prompt ("Ingrese un número");
+var dado = Math.floor(Math.random()*parseInt(numero));
+document.write ("El número aleatorio entre 0 y " + numero + " es: " + dado );
+console.log ("Programa completado");
