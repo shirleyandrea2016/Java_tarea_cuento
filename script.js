@@ -54,14 +54,78 @@ console.log ("Programa completado" )
 */
 
 /*OBJETO MATH*/
-var dado = Math.floor(Math.random()*6)+1;
+/*var dado = Math.floor(Math.random()*6)+1;
 alert("Dado dice:  " +dado);
 console.log ("Programa completado");
-
+*/
 
 
 /*OBJETO MATH ejercicio*/
-var numero = prompt ("Ingrese un número");
+/*var numero = prompt ("Ingrese un número");
 var dado = Math.floor(Math.random()*parseInt(numero));
 document.write ("El número aleatorio entre 0 y " + numero + " es: " + dado );
+console.log ("Programa completado");
+*/
+
+
+/*ADIVINA EL NÚMERO IF*/
+/*var numeroadivinable=Math.floor(Math.random()*10)+1;
+var numerousuario= prompt ("Ingrese un número del 1 al 10");
+if (parseInt(numerousuario)==numeroadivinable) 
+{document.write ("Bien adivinaste!!! el número es: " + numeroadivinable );}
+else
+{document.write ("no acertaste :( ");}
+*/
+
+
+/*ADIVINA EL NÚMERO ELSE IF*/
+var numeroIngresado = parseInt(prompt("Ingrese un numero entre el 1 y 5: "));
+var adivino=false;
+var aleatorio = Math.floor(Math.random() * 5) + 1;
+if (numeroIngresado === aleatorio) 
+	{adivino = true;}
+else if(aleatorio > numeroIngresado)
+	{
+	var nuevoIntento = parseInt(prompt("El numero a adivinar es mayor, vuelve a intentar" ));
+		if(nuevoIntento == aleatorio){	adivino=true; };	
+		numeroIngresado = nuevoIntento;
+	}
+	else
+	{
+	var nuevoIntento = parseInt(prompt("El numero a adivinar es menor, vuelve a intentar" ));
+		if(nuevoIntento == aleatorio){	adivino=true; };	
+		numeroIngresado = nuevoIntento;
+	};
+if(adivino)
+	{
+	alert("FELICITACIONES ADIVINASTE!!, EL NÚMERO " + numeroIngresado + " FUÉ EL ALEATORIO ENTRE 1 Y 5");
+    }
+    else
+    {alert("Ingresaste " + numeroIngresado + ", pero el numero a adivinar era " + aleatorio);}
+
+/*ADIVINAR NÚMERO CON AYUDA AGREGANDO COMETARIOS*/
+var numeroIngresado = parseInt(prompt("Ingrese un numero entre el 1 y 5: "));
+var adivino=false;
+var aleatorio = Math.floor(Math.random() * 5) + 1;
+if (numeroIngresado === aleatorio) 
+	{adivino = true;}
+else if(aleatorio > numeroIngresado)
+	{
+	var nuevoIntento = parseInt(prompt("El numero a adivinar es mayor, vuelve a intentar" ));
+		if(nuevoIntento == aleatorio){	adivino=true; };	
+		numeroIngresado = nuevoIntento;
+	}
+	else
+	{
+	var nuevoIntento = parseInt(prompt("El numero a adivinar es menor, vuelve a intentar" ));
+		if(nuevoIntento == aleatorio){	adivino=true; };	
+		numeroIngresado = nuevoIntento;
+	};
+if(adivino)
+	{
+	alert("FELICITACIONES ADIVINASTE!!, EL NÚMERO " + numeroIngresado + " FUÉ EL ALEATORIO ENTRE 1 Y 5");
+    }
+    else
+    {alert("Ingresaste " + numeroIngresado + ", pero el numero a adivinar era " + aleatorio);}
+
 console.log ("Programa completado");
