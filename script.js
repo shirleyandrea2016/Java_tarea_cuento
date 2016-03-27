@@ -78,7 +78,33 @@ else
 */
 
 
-/*ADIVINA EL NÚMERO ELSE IF*/
+/*ADIVINA EL NÚMERO CON AYUDA UTILIZANDO ELSE IF-BOLEANO*/
+/*var numeroIngresado = parseInt(prompt("Ingrese un numero entre el 1 y 5: "));
+var adivino=false;
+var aleatorio = Math.floor(Math.random() * 5) + 1;
+if (numeroIngresado === aleatorio) 
+	{adivino = true;}
+else if(aleatorio > numeroIngresado)
+	{
+	var nuevoIntento = parseInt(prompt("El numero a adivinar es mayor, vuelve a intentar" ));
+		if(nuevoIntento == aleatorio){	adivino=true; };	
+		numeroIngresado = nuevoIntento;
+	}
+	else
+	{
+	var nuevoIntento = parseInt(prompt("El numero a adivinar es menor, vuelve a intentar" ));
+		if(nuevoIntento == aleatorio){	adivino=true; };	
+		numeroIngresado = nuevoIntento;
+	};
+if(adivino)
+	{
+	alert("FELICITACIONES ADIVINASTE!!, EL NÚMERO " + numeroIngresado + " FUÉ EL ALEATORIO ENTRE 1 Y 5");
+    }
+    else
+    {alert("Ingresaste " + numeroIngresado + ", pero el numero a adivinar era " + aleatorio);}
+*/
+
+/*ADIVINA EL NÚMERO CON AYUDA AGREGANDO COMENTARIOS*/
 var numeroIngresado = parseInt(prompt("Ingrese un numero entre el 1 y 5: "));
 var adivino=false;
 var aleatorio = Math.floor(Math.random() * 5) + 1;
@@ -103,29 +129,3 @@ if(adivino)
     else
     {alert("Ingresaste " + numeroIngresado + ", pero el numero a adivinar era " + aleatorio);}
 
-/*ADIVINAR NÚMERO CON AYUDA AGREGANDO COMETARIOS*/
-var numeroIngresado = parseInt(prompt("Ingrese un numero entre el 1 y 5: "));
-var adivino=false;
-var aleatorio = Math.floor(Math.random() * 5) + 1;
-if (numeroIngresado === aleatorio) 
-	{adivino = true;}
-else if(aleatorio > numeroIngresado)
-	{
-	var nuevoIntento = parseInt(prompt("El numero a adivinar es mayor, vuelve a intentar" ));
-		if(nuevoIntento == aleatorio){	adivino=true; };	
-		numeroIngresado = nuevoIntento;
-	}
-	else
-	{
-	var nuevoIntento = parseInt(prompt("El numero a adivinar es menor, vuelve a intentar" ));
-		if(nuevoIntento == aleatorio){	adivino=true; };	
-		numeroIngresado = nuevoIntento;
-	};
-if(adivino)
-	{
-	alert("FELICITACIONES ADIVINASTE!!, EL NÚMERO " + numeroIngresado + " FUÉ EL ALEATORIO ENTRE 1 Y 5");
-    }
-    else
-    {alert("Ingresaste " + numeroIngresado + ", pero el numero a adivinar era " + aleatorio);}
-
-console.log ("Programa completado");
