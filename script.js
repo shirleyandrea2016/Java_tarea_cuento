@@ -105,7 +105,7 @@ if(adivino)
 */
 
 /*ADIVINA EL NÚMERO CON AYUDA AGREGANDO COMENTARIOS*/
-var numeroIngresado = parseInt(prompt("Ingrese un numero entre el 1 y 5: "));
+/*var numeroIngresado = parseInt(prompt("Ingrese un numero entre el 1 y 5: "));
 var adivino=false;
 var aleatorio = Math.floor(Math.random() * 5) + 1;
 if (numeroIngresado === aleatorio) 
@@ -128,4 +128,5 @@ if(adivino)
     }
     else
     {alert("Ingresaste " + numeroIngresado + ", pero el numero a adivinar era " + aleatorio);}
+*/
 
